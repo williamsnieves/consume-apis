@@ -10,6 +10,6 @@ If you want to see cute dogs pictures see the example just running
 
 after install dependencies just run
 
-´´´
+```
 npm run start
-´´´
+```
