@@ -1,0 +1,11 @@
+{
+  "name": "consume-apis",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "yarn start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
