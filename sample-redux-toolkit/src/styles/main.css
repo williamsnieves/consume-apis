@@ -1,0 +1,17 @@
+@font-face {
+  font-family: Starjedi;
+  src: url("../assets/fonts/Starjedi.ttf");
+}
+
+*  html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Starjedi;
+}

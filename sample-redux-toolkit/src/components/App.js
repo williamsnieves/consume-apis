@@ -7,6 +7,7 @@ import empiresStrikesBack from "../assets/empire-strikes-back.jpg";
 import phantomMenace from "../assets/phantom-menace.jpg";
 import returnOfJedi from "../assets/return-of-jedi.jpg";
 import revengeSith from "../assets/revenge-sith.jpg";
+import "../styles/app.css";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -26,35 +27,16 @@ const App = () => {
   }, []);
   return (
     <>
-      <h1 style={{ textAlign: "center" }}>Star wars films</h1>
-      <ul
-        style={{
-          listStyle: "none",
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "center",
-          gap: "10px",
-        }}
-      >
+      <h1 className="cards-title">Star wars films</h1>
+      <ul className="cards">
         {films.map((film) => (
-          <li
-            key={film.episode_id}
-            style={{ flexBasis: "350px", marginTop: "50px" }}
-          >
+          <li key={film.episode_id} className="card-wrapper">
             <figure>
-              <img
-                src={filmsCovers[film.episode_id]}
-                style={{
-                  objectFit: "cover",
-                  width: "100%",
-                  height: "100%",
-                  verticalAlign: "middle",
-                  borderRadius: "5px",
-                }}
-              />
-              <caption>
-                {film.title} {film.director}
-              </caption>
+              <img src={filmsCovers[film.episode_id]} className="img" />
+              <figcaption className="caption">
+                <span className="title">{film.title}</span>
+                <span className="director">{film.director}</span>
+              </figcaption>
             </figure>
           </li>
         ))}
