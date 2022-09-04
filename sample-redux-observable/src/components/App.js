@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { loadComments } from "../features/comments/commentsSlice";
+import Comment from "./Commnet";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -11,11 +12,11 @@ const App = () => {
   }, []);
 
   return (
-    <ul>
+    <section className="container">
       {comments.map((comment) => (
-        <li key={comment.id}>{comment.name}</li>
+        <Comment key={comment.id} {...comment} />
       ))}
-    </ul>
+    </section>
   );
 };
 

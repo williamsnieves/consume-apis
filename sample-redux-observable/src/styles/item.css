@@ -1,0 +1,26 @@
+.item {
+    background-color: #34495e;
+    color: #95a5a6;
+    border: 2px solid #95a5a6;
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: 2px 4px 9px rgba(0,0,0, 0.4);
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.item-body {
+  word-break: break-all;
+}
